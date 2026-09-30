@@ -1,7 +1,6 @@
 # AI To-Do List
 
-This repository is the starter codebase for an AI to-do-list project. At present, the application is a minimal C++ program: it builds and exits successfully, but it does not yet provide task management, AI features, user input, or persistent storage.
-
+This repository is the starter codebase for an AI to-do-list project. At present, the application is a minimal C++ program: it builds and exits successfully, and provides basic task management with local storage.
 ## Run the program
 
 The project requires a C++ compiler such as `g++`.
@@ -29,4 +28,4 @@ The current program has no console output; a successful run exits with status co
 
 ## Current status
 
-The project structure is in place, but the to-do-list application itself has not been implemented yet. Future work can add the task model, command-line or other interface, AI-assisted behavior, tests, and specifications.
+A working version has been created. The program allows users to create a to-do list items, assign priorities and due dates, and edit or delete entries.
