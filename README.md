@@ -1,24 +1,32 @@
-# cpp-container-template
+# AI To-Do List
 
-## Getting Started
+This repository is the starter codebase for an AI to-do-list project. At present, the application is a minimal C++ program: it builds and exits successfully, but it does not yet provide task management, AI features, user input, or persistent storage.
 
-This repository is compatible with [cpp-container](https://github.com/ChicoState/cpp-container). If not already built on your machine, clone and build it.
+## Run the program
 
-Run the container:
-
-```bash
-docker run -v "$(pwd)":/usr/src -it cpp-container
-```
-
-Run the application interactively in a shell:
+The project requires a C++ compiler such as `g++`.
 
 ```bash
-docker run -v "$(pwd)":/usr/src -it cpp-container sh
+g++ main.cpp -o app
+./app
 ```
 
-## Structure
+Or use the included helper script:
 
-* `.agents` - AI agent configurations and skills (in `/skills` subdirectory) for this project
-* `.` - The root directory contains the C++ code for the application as well as necessary scripts
-* `specs` - Specification documentation
-* `tests` - Test code
+```bash
+./test_runner.sh
+```
+
+The current program has no console output; a successful run exits with status code `0`.
+
+## Project layout
+
+- `main.cpp` — current application entry point.
+- `test_runner.sh` — compiles all C++ files in the repository root and runs the resulting `app` executable.
+- `specs/` — requirements and feature specifications.
+- `tests/` — automated test code.
+- `.agents/` — local AI-agent configuration and skills.
+
+## Current status
+
+The project structure is in place, but the to-do-list application itself has not been implemented yet. Future work can add the task model, command-line or other interface, AI-assisted behavior, tests, and specifications.
